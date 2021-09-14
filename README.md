@@ -12,7 +12,7 @@ Deze proeftoets is deel van de DEA Course aan de Hogeschool Arnhem/Nijmegen. In 
 
 # Opdracht 2: Refactoren
 7. De class ```FizzBuzzExecutor``` bevat verschillende bad smells. Vervang de magic numbers door constanten.
-8. De excute van ```AdderExecutor``` en ```FizzBuzzExecutor``` lijken sterk op elkaar en bevatten duplicate code. Refactor de code door een nieuwe gedeelde superklasse te introduceren die de duplicate code verwijdert. Test het succes van deze refactoring door de unit tests van ```AdderExecutor``` en ```FizzBuzzExecutor``` te runnen, deze moeten dan groen zijn. 
+8. De execute van ```AdderExecutor``` en ```FizzBuzzExecutor``` lijken sterk op elkaar en bevatten duplicate code. Refactor de code door een nieuwe gedeelde superklasse te introduceren die de duplicate code verwijdert. Test het succes van deze refactoring door de unit tests van ```AdderExecutor``` en ```FizzBuzzExecutor``` te runnen, deze moeten dan groen zijn. 
 
 # Opdracht 3: Stream API
 9. Voeg de classes ```Product```, ```ProductCategory``` en ```Streams``` toe aan je project en zet ook de bestaande unit-test van Streams in je project. Om die unit-test te laten compileren heb je een extra dependency nodig, namelijk
