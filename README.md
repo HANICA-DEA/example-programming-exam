@@ -23,7 +23,7 @@ met groupId org.hamcrest, artifactId hamcrest-library en versie 2.1, voeg deze d
 11. Voeg de class ```ProductIncreaser``` aan je project toe. 
 12. Maak een nieuwe class ```ThreadedProductIncreaser``` met een eigen main methode. Maak in de main methode:
     * 1 instantie van Product aan: ```Product tv = new Product("TV", 1200);```
-    * 2 Threads die de prijs van dit product ophogen door de ```ProductIncreaser``` aan te passen
+    * 2 Threads die de prijs van dit product ophogen door de ```ProductIncreaser``` multi-threaded te maken
     * 2 Threads die de prijs van dit product ophogen door gebruik van een lambda-expressie
     
     Start de vier threads en bescherm de ```Product``` class zodat niet meerdere threads tegelijk de prijs kunnen ophogen. 
