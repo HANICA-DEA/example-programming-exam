@@ -55,7 +55,7 @@ class StreamsTest {
     }
 
     @Test
-    void testCalculateAverageCostOfAllGadgets() {
+    void testCalculateAverageCostOfAllProducts() {
         // Arrange
         List<Product> input = initialiseTestProductSet();
 
