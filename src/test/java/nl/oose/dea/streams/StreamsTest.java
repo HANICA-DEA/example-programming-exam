@@ -60,7 +60,7 @@ class StreamsTest {
         List<Product> input = initialiseTestProductSet();
 
         // Act
-        int totalValue = sut.calculateAveragePriceOfAllProducts(input);
+        var totalValue = sut.calculateAveragePriceOfAllProducts(input);
 
         // Assert
         Assertions.assertEquals(1458, totalValue);

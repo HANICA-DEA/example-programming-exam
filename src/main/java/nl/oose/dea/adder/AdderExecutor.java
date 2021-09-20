@@ -1,11 +1,11 @@
 package nl.oose.dea.adder;
 
-public class AdderExecutor {
-    public String execute(int i) {
-        StringBuilder returnValue = new StringBuilder();
+import nl.oose.dea.executor.Executor;
 
-        returnValue.append(i+1);
-
-        return returnValue.toString();
+public class AdderExecutor extends Executor {
+    @Override
+    protected StringBuilder executeDetailed(StringBuilder stringBuilder, int i) {
+        stringBuilder.append(i+1);
+        return stringBuilder;
     }
 }

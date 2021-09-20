@@ -1,20 +1,28 @@
 package nl.oose.dea.fizzbuzz;
 
-public class FizzBuzzExecutor {
+import nl.oose.dea.executor.Executor;
 
-    public String execute(int i)  {
-        StringBuilder returnValue = new StringBuilder();
+public class FizzBuzzExecutor extends Executor  {
 
-        if (i % 3 == 0) {
-            returnValue.append("Fizz");
+    public static final String FIZZ = "Fizz";
+    public static final String BUZZ = "Buzz";
+    public static final int FIZZ_VALUE = 3;
+    public static final int BUZZ_VALUE = 5;
+
+    protected StringBuilder executeDetailed(StringBuilder returnValue, int i)  {
+
+        if (i <= 0) throw new NonPositiveFizzBuzzInputException();
+
+        if (i % FIZZ_VALUE == 0) {
+            returnValue.append(FIZZ);
         }
-        if (i % 5 == 0) {
-            returnValue.append("Buzz");
+        if (i % BUZZ_VALUE == 0) {
+            returnValue.append(BUZZ);
         }
         if (returnValue.length() == 0) {
             returnValue.append(i);
         }
 
-        return returnValue.toString();
+        return returnValue;
     }
 }
